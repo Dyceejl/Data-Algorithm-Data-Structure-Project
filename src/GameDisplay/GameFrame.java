@@ -15,6 +15,7 @@ public class GameFrame extends JFrame {
         loadData = new LoadData();
 
         add(gamePanel = new GamePanel(9, 9, 10));
+        
 
         setIconImage(loadData.getListImage().get("title"));
 

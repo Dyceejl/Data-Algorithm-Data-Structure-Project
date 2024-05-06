@@ -15,9 +15,10 @@ public class LoadData {
 		listImage = new HashMap<String, BufferedImage>();
 
 		try {
-			BufferedImage img = ImageIO.read(new File("D:\\Data-Algorithm-Data-Structure-Project\\src\\minesweeper.png"));
+            BufferedImage image = ImageIO.read(new File("D:\\Data-Algorithm-Data-Structure-Project\\src\\icon.png"));
+			BufferedImage titleImg = ImageIO.read(new File("D:\\Data-Algorithm-Data-Structure-Project\\src\\icon 1.png"));
 
-			listImage.put("title", img.getSubimage(0, 84, 114, 25));
+			listImage.put("title", titleImg);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
